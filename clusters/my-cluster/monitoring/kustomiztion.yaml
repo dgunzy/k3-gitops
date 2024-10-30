@@ -3,3 +3,6 @@ kind: Kustomization
 resources:
   - source.yaml
   - kube-prometheus-stack/release.yaml
+metadata:
+  name: monitoring
+  namespace: flux-system
