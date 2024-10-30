@@ -4,5 +4,6 @@ metadata:
   name: monitoring
   namespace: flux-system
 resources:
+  - namespace.yaml
   - source.yaml
   - kube-prometheus-stack/release.yaml
