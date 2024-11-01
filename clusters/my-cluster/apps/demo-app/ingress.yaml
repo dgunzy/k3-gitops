@@ -8,7 +8,7 @@ spec:
     - host: my-cluster.com
       http:
         paths:
-          - pathType: prefix
+          - pathType: Prefix
             path: / 
             backend:
               service:
