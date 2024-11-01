@@ -15,6 +15,7 @@ spec:
     spec:
       containers:
       - name: demo-app
-        image: nginx:stable-apline-slim
+        image: nginx:stable-alpine-slim
         ports:
-        - containerPort: 80
+          - name: web
+            containerPort: 80
