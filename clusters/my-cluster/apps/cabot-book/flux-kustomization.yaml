@@ -1,11 +1,11 @@
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:
-  name: demo-app
+  name: cabot-book 
   namespace: flux-system
 spec:
   interval: 1m
-  path: ./clusters/my-cluster/apps/demo-app
+  path: ./clusters/my-cluster/apps/cabot-book
   prune: true
   sourceRef:
     kind: GitRepository
