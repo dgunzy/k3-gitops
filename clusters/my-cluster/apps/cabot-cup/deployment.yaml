@@ -7,14 +7,14 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: demo-app
+      app: cabot-cup
   template:
     metadata:
       labels:
-        app: demo-app
+        app: cabot-cup
     spec:
       containers:
-      - name: demo-app
+      - name: cabot-cup
         image: ghcr.io/dgunzy/ejs-cabot-app:latest
         ports:
           - name: web
