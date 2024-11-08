@@ -3,6 +3,8 @@ kind: Ingress
 metadata:
   name: cabot-cup 
   namespace: my-cluster
+  annotations:
+    kubernetes.io/ingress.class: nginx  # Add this if missing
 spec:
   rules:
     - host: cabotcup.ca
