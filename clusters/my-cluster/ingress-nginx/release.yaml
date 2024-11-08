@@ -17,3 +17,8 @@ spec:
     createNamespace: true
     remediation:
       retries: 3
+  values:
+    controller:
+      service:
+        externalIPs: 
+          - "15.222.124.115"  
