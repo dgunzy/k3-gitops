@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: cabot-cup 
+  namespace: my-cluster
+spec:
+  rules:
+    - host: cabotcup.ca
+      http:
+        paths:
+          - pathType: Prefix
+            path: / 
+            backend:
+              service:
+                name: cabot-cup-service
+                port:
+                  number: 7070
+ 
+

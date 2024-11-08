@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: demo-app
+  name: cabot-cup
   namespace: my-cluster
 spec: 
   replicas: 1
@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: demo-app
-        image: nginx:stable-alpine-slim
+        image: ghcr.io/dgunzy/ejs-cabot-app:latest
         ports:
           - name: web
-            containerPort: 80
+            containerPort: 3000

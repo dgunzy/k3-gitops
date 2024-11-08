@@ -5,3 +5,4 @@ resources:
   - gotk-sync.yaml
   - ../apps/demo-app/flux-kustomization.yaml
   - ../ingress-nginx/flux-kustomization.yaml
+  - ../apps/cabot-cup/flux-kustomization.yaml
