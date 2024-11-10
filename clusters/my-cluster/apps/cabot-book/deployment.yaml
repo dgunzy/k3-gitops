@@ -4,6 +4,8 @@ metadata:
   name: cabot-book
   namespace: my-cluster
 spec: 
+  strategy:
+    type: Recreate
   replicas: 1
   selector:
     matchLabels:

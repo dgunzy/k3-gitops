@@ -3,7 +3,9 @@ kind: Deployment
 metadata:
   name: cabot-cup
   namespace: my-cluster
-spec: 
+spec:
+  strategy:
+    type: Recreate
   replicas: 1
   selector:
     matchLabels:
