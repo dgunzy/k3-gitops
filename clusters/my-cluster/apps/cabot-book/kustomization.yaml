@@ -7,8 +7,3 @@ resources:
   - service.yaml
   - ingress.yaml
   - secret.yaml
-decryption:
-  provider: sops
-  secretRef:
-    name: sops-age 
-    namespace: my-cluster 
