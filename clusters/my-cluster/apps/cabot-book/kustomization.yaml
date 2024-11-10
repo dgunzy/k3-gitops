@@ -1,5 +1,6 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
+namespace: my-cluster
 resources:
   - namespace.yaml
   - deployment.yaml
@@ -9,4 +10,5 @@ resources:
 decryption:
   provider: sops
   secretRef:
-    name: sops-age  
+    name: sops-age 
+    namespace: my-cluster 
