@@ -11,6 +11,7 @@ spec:
   tls:
   - hosts:
     - cabotcupbook.com
+    - www.cabotcupbook.com
     secretName: cabotcupbook-tls
   rules:
     - host: cabotcupbook.com
@@ -23,5 +24,13 @@ spec:
                 name: cabot-book-service
                 port:
                   number: 7070
- 
-
+    - host: www.cabotcupbook.com
+      http:
+        paths:
+          - pathType: Prefix
+            path: / 
+            backend:
+              service:
+                name: cabot-book-service
+                port:
+                  number: 7070
