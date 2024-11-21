@@ -5,7 +5,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 1h
-  path: ./clusters/my-cluster/cert-manager
+  path: ./clusters/my-cluster/kube-system/metrics-server
   prune: true
   sourceRef:
     kind: GitRepository
