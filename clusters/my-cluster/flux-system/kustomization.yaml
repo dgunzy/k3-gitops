@@ -7,3 +7,4 @@ resources:
   - ../apps/cabot-cup/flux-kustomization.yaml
   - ../cert-manager/flux-kustomization.yaml
   - ../apps/cabot-book/flux-kustomization.yaml
+  - ../kube-system/metrics-server/kustomization.yaml
