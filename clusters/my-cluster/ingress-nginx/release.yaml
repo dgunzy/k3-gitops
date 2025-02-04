@@ -21,4 +21,4 @@ spec:
     controller:
       service:
         externalIPs: 
-          - "15.222.124.115"  
+          - "38.102.124.212"  
