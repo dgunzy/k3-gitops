@@ -19,8 +19,8 @@ spec:
       retries: 3
   values:
     installCRDs: true
-    replicaCount: 0 ## Change this to 1 to renew certs
+    replicaCount: 1 
     webhook:
-      replicaCount: 0 ## Change this to 1 to renew certs
+      replicaCount: 1 
     cainjector:
-      replicaCount: 0 ## Change this to 1 to renew certs
+      replicaCount: 1 
