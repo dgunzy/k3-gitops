@@ -8,7 +8,7 @@ spec:
   chart:
     spec:
       chart: ingress-nginx
-      version: "4.x"  
+      version: "4.x"
       sourceRef:
         kind: HelmRepository
         name: ingress-nginx
@@ -20,5 +20,5 @@ spec:
   values:
     controller:
       service:
-        externalIPs: 
-          - "38.102.124.212"  
+        externalIPs:
+          - "38.102.124.212"
