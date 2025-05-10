@@ -18,7 +18,7 @@ spec:
       containers:
       - name: cabot-cup
         image: ghcr.io/dgunzy/ejs-cabot-app:latest
+        imagePullPolicy: Always
         ports:
           - name: web
-            containerPort: 3000    
-        
+            containerPort: 3000
